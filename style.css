@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FFE3FC;
+    height: 100vh;
+    width: 100vw;
+}
+
+.container {
+    color: #FF00E5;
+    font-size: 40px;
+    text-align: center; 
+    
+}
+
+.img{
+    display: flex;
+    align-items: center;
+    height: 1100px;
+    width: 700px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(./img/robo.png);
+}
+
+.img img {
+    height: 920px; 
+    
+    display: flex;
+    /* justify-content: end;  */
+    
+}
+
+main {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.login{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-right: 200px;
+    
+}
+.senha {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    flex-direction: column;
+    
+    
+}
+
+
+
+.items{
+    display: flex;
+    flex-direction: column;
+    color: #FF00E5;
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+.items input[type="text"] {
+    background-color: #ffffffa;/* Cor de fundo rosa */
+    color: #FF00E5; /* Cor do texto rosa */
+    font-size: 30px;
+    padding: 10px; /* Espaçamento interno */
+    border: 2px solid #FF00E5; /* Borda rosa */
+    border-radius: 8px; /* Borda arredondada */
+    margin-bottom: 10px; /* Margem inferior */
+    margin-left: 10px;
+}
