@@ -5,77 +5,70 @@
 }
 
 body {
-    background-color: #FFE3FC;
+background-image: url(./img/image\ 2.png);
+background-color: #FF00E5;
+background-repeat: no-repeat;
+   background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
-    width: 100vw;
 }
-
-.container {
+header {
     color: #FF00E5;
     font-size: 40px;
-    text-align: center; 
-    
-}
-
-.img{
-    display: flex;
-    align-items: center;
-    height: 1100px;
-    width: 700px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url(./img/robo.png);
-}
-
-.img img {
-    height: 920px; 
-    
-    display: flex;
-    /* justify-content: end;  */
-    
+    margin-top: 20px; /* Adiciona uma margem de 20px do topo da página */
+    position: absolute; /* Para posicionar no topo da página */
+    top: 0; /* Alinha o topo do elemento com o topo do contêiner pai */
+    left: 50%; /* Desloca o elemento horizontalmente em relação ao contêiner pai */
+    transform: translateX(-50%); /* Centraliza o elemento horizontalmente */
 }
 
 main {
-    width: 100%;
-    height: 80%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.login{
-    display: flex;
-    flex-direction: column;
-    margin-top: 10px;
-    margin-right: 200px;
-    
-}
-.senha {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    align-items: center;
     flex-direction: column;
-    
-    
+    position: relative;
 }
 
-
-
-.items{
+.items {
     display: flex;
     flex-direction: column;
+    align-items: flex-start; 
     color: #FF00E5;
-    font-size: 30px;
-    margin-top: 10px;
+    font-size: 40px;
+    margin-top: 20px;
+    padding: 50px;
+    border: 2px solid #FF00E5;
+    border-radius: 10px;;
+    position: relative; 
 }
 
-.items input[type="text"] {
-    background-color: #ffffffa;/* Cor de fundo rosa */
-    color: #FF00E5; /* Cor do texto rosa */
-    font-size: 30px;
-    padding: 10px; /* Espaçamento interno */
-    border: 2px solid #FF00E5; /* Borda rosa */
-    border-radius: 8px; /* Borda arredondada */
-    margin-bottom: 10px; /* Margem inferior */
-    margin-left: 10px;
+.items input[type="text"],
+.items input[type="password"],
+.items button {
+    width: 300px;
+    padding: 10px;
+    font-size: 24px;
+    margin-bottom: 10px;
+    border: 2px solid #FF00E5;
+    border-radius: 8px;
+    text-align: center;
+   
+}
+.items button{
+    background-color: #FF61EF;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+
+
+
+
+label {
+    color: #FF61EF;
+    font-size: 20px;
+  
 }
