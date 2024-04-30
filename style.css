@@ -17,11 +17,11 @@ background-repeat: no-repeat;
 header {
     color: #FF00E5;
     font-size: 40px;
-    margin-top: 20px; /* Adiciona uma margem de 20px do topo da página */
-    position: absolute; /* Para posicionar no topo da página */
-    top: 0; /* Alinha o topo do elemento com o topo do contêiner pai */
-    left: 50%; /* Desloca o elemento horizontalmente em relação ao contêiner pai */
-    transform: translateX(-50%); /* Centraliza o elemento horizontalmente */
+    margin-top: 20px;
+    position: absolute; 
+    top: 0;
+    left: 50%; 
+    transform: translateX(-50%); 
 }
 
 main {

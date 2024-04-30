@@ -1,29 +1,33 @@
 'use strict'
-const emailInput = document.getElementById('email');
-const passwordInput = document.getElementById('password');
-const loginButton = document.getElementById('login-button');
 
+const button = document.getElementById('login-button')
 
-loginButton.addEventListener('click', () => {
-    
-    const email = emailInput.value;
-    const password = passwordInput.value;
+const validarLogin = async () => {
+    const email = document.getElementById('email').value
+    const password = document.getElementById('password').value
 
+    const urlLogin = 'https://back-login.vercel.app/usuarios'
+    const listUsers = await fetch(urlLogin)
+    const objUsers = await listUsers.json()
 
-    if (email.trim() === '' || password.trim() === '') {
-        alert('Por favor, preencha todos os campos.');
-        return;
-    }
-
-   
-    if (email === 'vitoria@gmail.com' && password === '1234') {
-        alert('Login bem sucedido!');
-        window.location.href = 'home.html';
+    if (!email || !password) {
+        alert('Por favor, preencha todos os campos!')
     } else {
-        alert('LOGIN ou SENHA inválidas. Por favor, tente novamente.');
-    }
-});
+        let validaUser = false
 
-passwordInput.addEventListener('input', () => {
-    passwordInput.setAttribute('type', 'password');
+        objUsers.forEach(user => {
+            if (user.email === email && user.senha === password) {
+                validaUser = true
+                window.location.href = 'home.html'
+            }
+        });
+
+        if (!validaUser) {
+            alert('Login ou senha inválidos!!')
+        }
+    }
+};
+
+button.addEventListener('click', () => {
+    validarLogin()
 });

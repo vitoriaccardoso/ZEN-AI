@@ -39,7 +39,6 @@ main{
     width: 500px;
     background-color: #FFE3FC;
     border: 5px solid #FF00E5;
-    overflow: hidden;
     border-radius: 50px;
 }
 .caixas .caixa2{
@@ -47,7 +46,6 @@ main{
     width: 500px;
     background-color: #FFE3FC;
     border: 5px solid #FF00E5;
-    overflow: hidden;
     border-radius: 50px;
 }
 
@@ -61,6 +59,7 @@ footer{
     display: flex;
     align-items: center;
     gap: 5px;
+   
 }
 
 footer input{
